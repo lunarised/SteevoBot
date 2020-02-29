@@ -4,7 +4,7 @@ Your very own basic mastodon posting bot
 ## Dependencies
 * `ruby`
 * `ruby gem` 
-* A fediverse access token (Follow [this guide] (https://tinysubversions.com/notes/mastodon-bot/index.html))
+* A fediverse access token (Follow [this guide](https://tinysubversions.com/notes/mastodon-bot/index.html))
  
 ## Setup
 1.  Clone this repository ti wherever you want.
