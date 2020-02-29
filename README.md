@@ -3,20 +3,12 @@ Your very own basic mastodon posting bot
 
 ## Dependencies
 * `ruby`
-* `toot` (found [here](https://github.com/ihabunek/toot))
-* A fediverse account (Mastodon, Pleroma, GNUSocial should all work)
-* An active internet connection `duh`
-
-## DistroSpecific: Arch Linux
-* install toot from the AUR using your chosen client, eg `yay -S toot` , `yaourt -S toot` or `pacaur -S toot`
-## DistroSpecific: Raspian
-* install toot using the unstructions on their github (shown above)
-
----
-
-* use the toot cli tool to link it to your shitposting account of choice
-* extract Steevo.rb to wherever you seem fit
-* create a steevo.txt file in the same folder as your Steevo.rb, and fill it with possible posts for steevo to say, 1 post per line
-* Change the fediverse account in Steevo.rb to your account linked with toot
-* Boom, Steevo's your uncle
-
+* `ruby gem` 
+* A fediverse access token (Follow [this guide] (https://tinysubversions.com/notes/mastodon-bot/index.html))
+ 
+## Setup
+1.  Clone this repository ti wherever you want.
+2.  `cd SteevoBot`
+3. `gem install mastodon-api --user`
+4.  Add your token that you got following the tutorial to Steevo.rb
+5.  ruby Steevo.rb
