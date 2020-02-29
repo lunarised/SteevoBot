@@ -7,5 +7,5 @@ def get_status
   return status
 end
 
-steevo = Mastodon::REST::Client.new(base_url: "https://heavensfeel.xyz", bearer_token: "OMssuyKS9tuEQdqvnyAdSiywqrGj1pHSS9U8rCZJHPE")
+steevo = Mastodon::REST::Client.new(base_url: "https://heavensfeel.xyz", bearer_token: "YOUR TOKEN")
 steevo.create_status(get_status)
