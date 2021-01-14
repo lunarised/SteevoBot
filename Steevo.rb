@@ -1,13 +1,11 @@
 #!/bin/ruby
 
-module LineRead
-  module_function
-  def run
-    File.readlines("steevo.txt").sample
-  end
+require 'mastodon'
+
+def get_status
+  status = File.readlines("steevo.txt").sample.chomp
+  return status
 end
 
-post = LineRead.run.chomp
-system("toot activate Steevo@welovela.in")
-system("toot post \""+ post +"\"")
-system("echo "+post+"");
+steevo = Mastodon::REST::Client.new(base_url: "https://heavensfeel.xyz", bearer_token: "YOUR TOKEN")
+steevo.create_status(get_status)
